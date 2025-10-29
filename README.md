@@ -64,7 +64,7 @@ Visualized employee trends using **Matplotlib** and **Seaborn**:
 Clone this repository:
 
 Always show details
-git clone https://github.com/yourusername/Employee-Attrition-Prediction.git
+git clone https://github.com/ChaitraTM/Employee-Attrition-Prediction.git
 
 
 Install required libraries:
@@ -72,32 +72,41 @@ Install required libraries:
 Always show details
 pip install -r requirements.txt
 
+## 📊 Dashboard Preview
+
+Below is the Tableau dashboard visualization for employee attrition analysis:
+
+![Employee Attrition Dashboard](https://github.com/ChaitraTM/Employee-Attrition-Prediction/blob/main/Screenshot%202025-10-29%20043805.png?raw=true)
+
+![Model Accuracy Chart](https://github.com/ChaitraTM/Employee-Attrition-Prediction/blob/main/Screenshot%202025-10-29%20052514.png?raw=true)
+
+## 📈 Model Evaluation Example
+
+| Metric     | Score |
+|-------------|--------|
+| Accuracy    | 0.85   |
+| Precision   | 0.82   |
+| Recall      | 0.78   |
+| F1-Score    | 0.80   |
+
+---
+
+## 🧠 Key Insights
+
+- Highest attrition occurs in **Sales** and **R&D** departments.  
+- Employees doing **Overtime** are more likely to leave.  
+- **Younger employees (25–35 years)** and those with **low salary** have higher attrition risk.  
+- The model gives around **85% accuracy** in predicting attrition.
+
+---
 
 ### 6️⃣Export Results for Tableau
-  After making predictions, export them:
-  ```python
-  results_df.to_csv("employee_attrition_results.csv", index=False)
+results_df.to_csv("employee_attrition_results.csv", index=False)
 
-   Tableau Dashboard Preview
-   <img width="1341" height="834" alt="Screenshot 2025-10-29 043805" src="https://github.com/user-attachments/assets/d098995a-8912-4c4e-adc4-0a422234da80" />
-   📈 Model Evaluation Example
-   Metric	Score
-   Accuracy	0.85
-   Precision	0.82
-   Recall	0.78
-   F1-Score	0.80
-   🧠 Key Insights
-  -Highest attrition occurs in Sales and R&D departments.
-  -Employees doing Overtime are more likely to leave.
-  -Younger employees (age 25–35) and those with low salary have higher attrition risk.
-  -Model gives around 85% accuracy in predicting attrition.
+## ▶️ Open the Notebook
 
+To explore, train, and evaluate the model, open the notebook using:
 
-
-Open the notebook:
-
-Always show details
+```bash
 jupyter notebook employee_attrition_analysis.ipynb
 
-
-Run all cells to train and evaluate the model.
